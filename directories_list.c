@@ -16,7 +16,7 @@ _Bool directories_list(){
     while ((dir = readdir(d)) != NULL) {
 	if(strcmp(dir->d_name,".")&&strcmp(dir->d_name,"..")){
           if(dir->d_type == DT_DIR){
-          printf("Verzeichnis: %s\t\tGroesse: %d\n", dir->d_name,dir->d_reclen);
+          printf("Verzeichnis: %s\t\tGroesse: %d Bytes\n", dir->d_name,dir->d_off);
 	  }
 	}
     }
