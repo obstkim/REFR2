@@ -1,6 +1,7 @@
 #include "ledL.h"
+#include "led.h"
 
 int main (int argc, char **arg)
 {
-   blink(arg[1]);
+   start(arg[1]);
 }
